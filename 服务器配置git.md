@@ -30,4 +30,11 @@
     - //找到 #RSAAuthentication yes 和  #PubkeyAuthentication yes 以及#AuthorizedKeysFile      .ssh/authorized_keys 上的注释#去掉使配置生效
 ## git服务器安装就完成了现在我们禁用git用户通过shell登录其只能使用git-shell
   - vi /etc/passwd
-    - 将git:x:1000:1000::/home/git:/bin/bash改为git:x:1000:1000::/home/git:/usr/bin/git-shell
+    - 将
+      ```
+        git:x:1000:1000::/home/git:/bin/bash
+      ```
+      改为
+      ```
+        git:x:1000:1000::/home/git:/usr/bin/git-shell
+      ```
