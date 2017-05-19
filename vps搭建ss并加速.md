@@ -15,8 +15,8 @@
     - [https://sourceforge.net/projects/shadowsocksgui/files/dist/](https://sourceforge.net/projects/shadowsocksgui/files/dist/)
   - 配置Shadowsocks
     ```
-      地址：127.0.0.1:443
-      加密 aes-256-cfb
+      地址: 127.0.0.1:443
+      加密: aes-256-cfb
     ```
   - 本地下载kcptun客户端
     - [https://github.com/xtaci/kcptun/releases/tag/v20170315](https://github.com/xtaci/kcptun/releases/tag/v20170315) 达尔文386
