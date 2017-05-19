@@ -30,6 +30,15 @@
     - //创建名为myProject的git裸仓库（没有工作区文件只有commit）
   - git init www
     - //创建名为www的git非裸仓库（有工作区）
+    - 非裸库服务器仓库需要执行
+      ```
+        git config receive.denyCurrentBranch ignore
+      ```
+      才可以push代码，每次提交代码到非裸库需要执行
+      ```
+        git reset --hard
+      ```
+        才可以看到提交的文件
   - 初始化完仓库执行
     - chown git myProject.git
       - //修改拥有者
