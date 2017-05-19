@@ -28,7 +28,7 @@
     - //使用这条命令可以将本地的公钥填入到主机的ssh验证文件内这样就使得本机克隆代码时不用再输入密码了。
     - //当然要使得这套机制生效还得修改/etc/ssh/sshd_config文件
     - //找到 #RSAAuthentication yes 和  #PubkeyAuthentication yes 以及#AuthorizedKeysFile      .ssh/authorized_keys 上的注释#去掉使配置生效
-## git服务器安装就完成了现在我们禁用git用户通过shell登录其只能使用git-shell
+## 禁用git用户通过shell登录其只能使用git-shell
   - vi /etc/passwd
     - 将
       ```
